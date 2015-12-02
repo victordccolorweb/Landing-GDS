@@ -1,0 +1,190 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:700,900,300,400);
+
+$font: 'Lato', sans-serif;
+$weight300: 300;
+@mixin font300($font, $weight300) {
+    font-family: $font;
+    font-weight: $weight300;
+}
+
+$font: 'Lato', sans-serif;
+$weight400: 400;
+@mixin font400($font, $weight400) {
+    font-family: $font;
+    font-weight: $weight400;
+}
+
+$font: 'Lato', sans-serif;
+$weight700: 700;
+@mixin font700($font, $weight700) {
+    font-family: $font;
+    font-weight: $weight700;
+}
+
+$font: 'Lato', sans-serif;
+$weight900: 900;
+@mixin font900($font, $weight900) {
+    font-family: $font;
+    font-weight: $weight900;
+}
+
+p {
+	color: #000000;
+	font-size: 1em;
+	@include font300($font, $weight300);
+}
+
+h1 {
+	color: #FF6400;
+	font-size: 2em;
+	@include font700($font, $weight700);
+}
+
+.overlay-video {
+	height: 100%;
+	background: #000000;
+	
+	#load-video {
+		width: 100%;
+		height: 100%;
+		background: #0000;
+		position: relative;
+		top: 0;
+		left: 0;
+		z-index: 0;
+	}
+}
+
+.description {
+	width: 100%;
+	background: url(../img/back-desc.jpg) 50% 0 fixed;
+	background-position: center center;
+	-webkit-background-size: cover;
+	background-size: cover;
+	padding: 80px 0px;
+	
+	.block-story-song {
+		height: 385px;
+		display: table;
+		
+			.block-align-v {
+				display: table-cell;
+				vertical-align: middle;
+				
+				h1 {
+					text-align: center;
+					margin-bottom: 22px;
+				}
+				
+				.container-info-1 {
+					width: 80%;
+					margin: 0 auto;
+					
+					.body-text1 {
+						color: #FFFFFF;
+						margin-bottom: 10px;
+					}
+				}
+				
+				.container-list {
+					width: 80%;
+					margin: 28px auto 0px auto;
+					
+					ul {
+						list-style: none;
+						
+						li {
+							color: #FFFFFF;
+							@include font400($font, $weight400);
+							margin-bottom: 10px;
+							
+							.names-list {
+								color: #FF6400;
+								@include font700($font, $weight700);
+							}
+						}
+					}
+				}
+			}
+	}
+}
+
+.container-downloads {
+	background-color: #FFFFFF;
+	padding: 80px 0px;
+	
+	h1 {
+		text-align: center;
+		margin-bottom: 14px;
+	}
+	
+	.container-info-2 {
+		width: 50%;
+		margin: 0 auto;
+		
+		.body-text2 {
+			color: #000000;
+			@include font300($font, $weight300);
+			font-size: 18px;
+			text-align: center;
+			padding: 0 16px;
+		}
+	}
+	
+	.divider-downloads {
+		width: 60%;
+		border-top: 1px solid #FF6400;
+		margin-top: 30px;
+	}
+}
+
+footer {
+	background-color: #1A1A1A;
+	
+	.start-footer {
+		border-bottom: 1px solid #000000;
+		padding: 40px 0;
+		
+		img {
+			display: block;
+			margin: 0 auto;
+			
+			&:first-child {
+				margin-bottom: 20px;
+			}
+		}
+	}
+	
+	.final-footer {
+		border-top: 1px solid #292929;
+		padding: 12px 0;
+		
+		.container-copyright {
+			float: left;
+			color: #3E3E3E;
+			font-size: 0.7em;
+			@include font700($font, $weight700);
+			margin-top: 4px;
+		}
+		
+		.container-creative {
+			float: right;
+			color: #3E3E3E;
+			font-size: 0.7em;
+			@include font700($font, $weight700);
+			display: table;
+			
+			.creative-align {
+				height: auto;
+				display: table-cell;
+				vertical-align: middle;
+			}
+			
+			img {
+				max-width: 50%;
+				height: auto;
+				margin-left: 6px;
+			}
+		}
+	}
+}
