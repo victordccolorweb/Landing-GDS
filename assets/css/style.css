@@ -165,6 +165,10 @@ footer {
       margin: 0 auto; }
       footer .start-footer img:first-child {
         margin-bottom: 20px; }
+  footer .container-contact h3 {
+    font-size: 1.2em;
+    text-align: center;
+    margin-bottom: 25px; }
   footer .container-follow-us h3 {
     font-size: 1.2em;
     text-align: center;
@@ -213,6 +217,66 @@ footer {
         height: auto;
         margin-left: 6px; }
 
+@media (min-width: 320px) and (max-width: 479px) {
+  .description {
+    padding: 40px 0; }
+    .description .block-story-song .block-align-v h1 {
+      font-size: 1.7em; }
+    .description .block-story-song .block-align-v .container-info-1 {
+      width: 100%; }
+    .description .block-story-song .block-align-v .container-list {
+      width: 100%;
+      margin: 28px auto; }
+      .description .block-story-song .block-align-v .container-list ul li {
+        text-align: center; }
+        .description .block-story-song .block-align-v .container-list ul li .names-list {
+          width: 100%;
+          display: inline-block; }
+
+  .container-downloads {
+    padding: 50px 0px 20px 0px; }
+    .container-downloads h1 {
+      font-size: 1.7em; }
+    .container-downloads .container-info-2 {
+      width: 100%; }
+      .container-downloads .container-info-2 .body-text2 {
+        padding: 0; }
+    .container-downloads .divider-downloads {
+      width: 100%;
+      margin-top: 26px;
+      margin-bottom: 26px; }
+    .container-downloads .container-download {
+      margin-bottom: 30px; }
+    .container-downloads .divider-downloads-2 {
+      width: 80%;
+      border-top: 1px solid rgba(255, 100, 0, 0.2);
+      margin-top: 26px;
+      margin-bottom: 26px; }
+
+  footer .start-footer #logos-footer {
+    width: 80%;
+    margin: 0 auto; }
+    footer .start-footer #logos-footer img {
+      float: left;
+      max-width: 50%;
+      margin-bottom: 0;
+      text-align: center; }
+      footer .start-footer #logos-footer img:first-child {
+        margin-right: 40px; }
+      footer .start-footer #logos-footer img:last-child {
+        max-width: 23%;
+        margin-right: 0; }
+  footer .container-follow-us {
+    margin-top: 30px; }
+    footer .container-follow-us ul {
+      width: 68%; }
+  footer .final-footer {
+    padding: 22px 0; }
+    footer .final-footer .container-copyright {
+      width: 100%;
+      text-align: center;
+      margin-top: 0px;
+      margin-bottom: 16px; } }
 @font-face {
   font-family: 'ytpregular';
   src: url("../assets/font/ytp-regular.eot"); }
