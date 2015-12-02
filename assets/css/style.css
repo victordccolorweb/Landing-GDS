@@ -58,6 +58,16 @@ h1 {
   font-family: "Lato", sans-serif;
   font-weight: 700; }
 
+h2 {
+  color: #000000;
+  font-family: "Lato", sans-serif;
+  font-weight: 700; }
+
+h3 {
+  color: #FFFFFF;
+  font-family: "Lato", sans-serif;
+  font-weight: 300; }
+
 .overlay-video {
   height: 100%;
   background: #000000; }
@@ -124,9 +134,26 @@ h1 {
       text-align: center;
       padding: 0 16px; }
   .container-downloads .divider-downloads {
-    width: 60%;
+    width: 65%;
     border-top: 1px solid #FF6400;
+    margin-top: 40px;
+    margin-bottom: 40px; }
+  .container-downloads h2 {
+    font-size: 1.3em;
+    text-align: center; }
+  .container-downloads .container-download {
+    width: 100%;
+    height: 80px;
+    display: table;
     margin-top: 30px; }
+    .container-downloads .container-download .holder-icon {
+      text-align: center;
+      display: table-cell;
+      vertical-align: middle; }
+      .container-downloads .container-download .holder-icon .icon-secuencias, .container-downloads .container-download .holder-icon .icon-letra, .container-downloads .container-download .holder-icon .icon-pista, .container-downloads .container-download .holder-icon .icon-acordes {
+        color: #000000;
+        font-size: 5em;
+        line-height: 0em; }
 
 footer {
   background-color: #1A1A1A; }
@@ -138,6 +165,28 @@ footer {
       margin: 0 auto; }
       footer .start-footer img:first-child {
         margin-bottom: 20px; }
+  footer .container-follow-us h3 {
+    font-size: 1.2em;
+    text-align: center;
+    margin-bottom: 25px; }
+  footer .container-follow-us ul {
+    width: 43%;
+    list-style: none;
+    padding: 0;
+    margin: 0 auto; }
+    footer .container-follow-us ul li {
+      display: inline-block;
+      margin-right: 12px; }
+      footer .container-follow-us ul li:last-child {
+        margin-right: 0; }
+      footer .container-follow-us ul li a {
+        color: #FFFFFF;
+        text-decoration: none; }
+        footer .container-follow-us ul li a:hover {
+          color: #FF6400;
+          text-decoration: none; }
+        footer .container-follow-us ul li a .icon-facebook, footer .container-follow-us ul li a .icon-twitter, footer .container-follow-us ul li a .icon-instagram, footer .container-follow-us ul li a .icon-snapchat, footer .container-follow-us ul li a .icon-youtube {
+          font-size: 1.6em; }
   footer .final-footer {
     border-top: 1px solid #292929;
     padding: 12px 0; }
@@ -397,3 +446,63 @@ footer {
 .mb_YTPBar .level.vertical {
   height: auto;
   width: 100%; }
+
+@font-face {
+  font-family: "landing-gds";
+  src: url("../font/icons/landing-gds.eot");
+  src: url("../font/icons/landing-gds.eot?#iefix") format("embedded-opentype"), url("../font/icons/landing-gds.woff") format("woff"), url("../font/icons/landing-gds.ttf") format("truetype"), url("../font/icons/landing-gds.svg#landing-gds") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+[data-icon]:before {
+  font-family: "landing-gds" !important;
+  content: attr(data-icon);
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+[class^="icon-"]:before,
+[class*=" icon-"]:before {
+  font-family: "landing-gds" !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+.icon-acordes:before {
+  content: "\61"; }
+
+.icon-download:before {
+  content: "\62"; }
+
+.icon-facebook:before {
+  content: "\63"; }
+
+.icon-instagram:before {
+  content: "\64"; }
+
+.icon-letra:before {
+  content: "\65"; }
+
+.icon-pista:before {
+  content: "\66"; }
+
+.icon-secuencias:before {
+  content: "\67"; }
+
+.icon-snapchat:before {
+  content: "\68"; }
+
+.icon-twitter:before {
+  content: "\69"; }
+
+.icon-youtube:before {
+  content: "\6a"; }
